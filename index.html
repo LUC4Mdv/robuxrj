@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <title>RJ</title>
+    <link rel="shortcut icon" href="./icon.svg" type="image/x-icon">
+    <title>RJ - Mentorias</title>
 </head>
 <body>
     <div class="header">
@@ -51,7 +52,7 @@
     
     <section class="desc">
         <div class="conteudo">
-            <h1>NESSA MENTORIA VOCÊ VAI APRENDER</h1>
+            <h1><span class="type"></span></h1>
             <div class="text">
                 <div class="bloco">
                     <h2>ATRAIR</h2>
@@ -83,6 +84,71 @@
             </div>
         </div>
     </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".type", {
+            strings : ["VOCÊ VAI APRENDER :"],
+            typeSpeed : 70,
+            backSpeed : 100,
+            loop: true,
+        })
+    </script>
+     <script>
+        window.onload = function () {
+      document.addEventListener(
+        "contextmenu",
+        function (e) {
+          e.preventDefault();
+        },
+        false
+      );
+
+      document.addEventListener(
+        "keydown",
+        function (e) {
+          //document.onkeydown = function(e) {
+          // "I" key
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+            disabledEvent(e);
+          }
+          // "J" key
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            disabledEvent(e);
+          }
+          // "S" key + macOS
+          if (
+            e.keyCode == 83 &&
+            (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)
+          ) {
+            disabledEvent(e);
+          }
+          // "U" key
+          if (e.ctrlKey && e.keyCode == 85) {
+            disabledEvent(e);
+          }
+          // "F12" key
+          if (event.keyCode == 123) {
+            disabledEvent(e);
+          }
+        },
+        false
+      );
+
+      function disabledEvent(e) {
+        if (e.stopPropagation) {
+          e.stopPropagation();
+        } else if (window.event) {
+          window.event.cancelBubble = true;
+        }
+        e.preventDefault();
+        return false;
+      }
+    };
+    </script>
+
+    
 
 </body>
 </html>

@@ -253,8 +253,8 @@ section .conteudo .text{
 }
 
 section .conteudo h1{
-    text-align: center;
     font-size: 2em;
+    text-align: center;
 }
 
 section .conteudo .text .bloco{
@@ -271,6 +271,7 @@ section .conteudo .text .bloco{
 
 section .conteudo .text .bloco h2{
     margin-bottom: 10%;
+    color: #0099ff;
 }
 
 section .conteudo .text .bloco p{
