@@ -34,6 +34,8 @@ body{
 
 main{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
@@ -139,7 +141,7 @@ main{
 
 .container .off .timer button{
     position: absolute;
-    margin-top: 30%;
+    margin-top: 70vh;
     background-color: transparent;
     border: 0;
     border: 1px solid #0099ff;
@@ -247,7 +249,7 @@ section .conteudo .text{
 
 section .conteudo h1{
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1em;
 }
 
 section .conteudo .text .bloco{
@@ -274,4 +276,71 @@ section .conteudo .text .bloco p{
 section {
     background-color: #000;
     height: 100vh;
+}
+
+
+@media (max-width: 1200px){
+    main{
+        height: 250vh;
+        margin-top: 100px;
+    }
+
+    main .container{
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    main .container .video{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main .container .off{
+        align-items: start;
+        width: 100vw;
+    }
+
+    main .container .off .timer{
+        gap: 50px;
+    }
+
+    main .container .off .timer button{
+        position: absolute;
+        margin-top: 730px;
+    }
+
+    div.sobre{
+        height: 150vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.sobre .texto{
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.sobre .texto .texto-sobre{
+        display: flex;
+        gap: 30px;
+        height: 100%;
+        width: 90%;
+        align-items: center;
+    }
+
+
+    section.desc{
+        height: 500vh;
+    }
+
+    section.desc .text{
+        flex-wrap: wrap;
+    }
+
+    section.desc .text .bloco{
+        width: 90vw;
+        height: 50vh;
+    }
 }
