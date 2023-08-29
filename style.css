@@ -68,11 +68,10 @@ main{
     height: 80%;
     display: flex;
     align-items: center;
-    background-image: url("img/IMG_0163.jpg");
+    background-image: url("./img/IMG_0163.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #292929;
     border: 1px solid #0099ff;
     justify-content: center;
 }
@@ -182,11 +181,10 @@ div.sobre .foto{
 }
 
 div.sobre .foto .png{
-    background-color: #212121;
     border: 1px solid #0099ff;
     width: 90%;
     height: 90%;
-    background-image: url("img/gif-hacker2.gif");
+    background-image: url("./img/gif-hacker2.gif");
 
 }
 
@@ -223,7 +221,7 @@ div.sobre .texto .texto-sobre p.robux{
 
 section.desc{
     height: 100vh;
-    background-image: url("img/IMG_0163.jpg");
+    background-image: url("./img/IMG_0163.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
