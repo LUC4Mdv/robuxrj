@@ -221,18 +221,17 @@ div.sobre .texto .texto-sobre p.robux{
 
 section.desc{
     height: 100vh;
-    background-image: url("./img/codes-blue.gif");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 section .conteudo{
+    background-image: url("./img/codes-blue.gif");
     height: 90%;
     width: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section .conteudo .text{
