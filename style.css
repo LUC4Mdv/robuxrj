@@ -68,7 +68,7 @@ main{
     height: 80%;
     display: flex;
     align-items: center;
-    background-image: url("/IMG_0163.jpg");
+    background-image: url("./IMG_0163.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -186,7 +186,7 @@ div.sobre .foto .png{
     border: 1px solid #0099ff;
     width: 90%;
     height: 90%;
-    background-image: url("/gif-hacker2.gif");
+    background-image: url("./gif-hacker2.gif");
 
 }
 
@@ -223,7 +223,7 @@ div.sobre .texto .texto-sobre p.robux{
 
 section.desc{
     height: 100vh;
-    background-image: url("/codes-blue.gif");
+    background-image: url("./codes-blue.gif");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
