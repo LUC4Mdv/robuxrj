@@ -30,14 +30,14 @@
     font-weight: 500;
 }
 
+
 body{
+    background-color: #000;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
     flex-direction: column;
-    background-size: cover;
-    background-color: #000;
 }
 
 .back{
@@ -93,7 +93,6 @@ header .menu ul li a:hover{
 
 
 section.main{
-    margin-top: 80px;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -172,12 +171,10 @@ section.main p.card span{
 }
 
 
-
 section.cards{
-    height: 600px;
     display: flex;
-    margin: 20px 0;
     width: 90%;
+    justify-content: center;
 }
 
 section.cards .texto{
@@ -209,7 +206,7 @@ a.dc{
     font-size: 2.2em;
     position: fixed;
     right: 20px;
-    top: 500px;
+    top: 650px;
     height: 80px;
     width: 80px;
     background-color: var(--color-site);
@@ -219,15 +216,16 @@ a.dc{
 
 
 section.cards .card{
-    width: 70%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 section.cards .card .card-info{
-    height: 90%;
-    width: 45%;
+    height: 100%;
+    padding: 70px 40px;
+    width: 48%;
     background-color: var(--card);
 
     border: 2px solid var(--color-site);
@@ -240,8 +238,8 @@ section.cards .card .card-info{
 }
 
 section.cards .card .card-info .logo{
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     background-color: gray;
     border-radius: 50%;
 }
@@ -264,30 +262,43 @@ section.cards .card .card-info .infos ul li i{
 
 
 @media (max-width: 800px){
+   
+    header ul li a{
+        font-size: 0.9em;
+    }
     section.main{
         flex-direction: column;
         gap: 100px;
-        width: 100vw;
+        width: 100%;
     }
     section.main .textos, section.main .logo{
-        width: 100vw;
+        width: 100%;
     }
     section.cards{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     section.cards .texto{
-        width: 100vw;
+        width: 90%;
     }
     section.cards .card{
         width: 100vw;
+        flex-direction: column;
         height: 100%;
-        background-color: red;
         align-items: center;
         justify-content: space-around;
-        gap: 0;
+        margin-top: 20px;
+        gap: 30px;
+
+
     }
-    section.cards .card .cards-info{
-      width: 65%;
+    section.cards .card .card-info{
+        width: 70%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        height: 100%;
     }
 }
 
